@@ -13,16 +13,24 @@ An app that allows you to make notes and save notes.
 
 ## Installation
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development env running.
 
 ```cli
-npm i
+npm dev
+```
+
+For deployment.
+
+```cli
+npm start
 ```
 
 ## Usage
 
+For development environment using nodemon.
+
 ```cli
-npm start
+npm start:Dev
 ```
 
 ## Built With

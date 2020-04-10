@@ -15,7 +15,7 @@ app.use(
 apiRoutes(app)
 
 app.get("*", (req, res) => {
-  res.sendStatus(404)
+  res.sendFile("/public/notFound.html")
 })
 
 const PORT = process.env.PORT || 3000

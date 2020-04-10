@@ -1,5 +1,6 @@
 const express = require("express")
 const apiRoutes = require("./routes/apiRoutes")
+const path = require("path")
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
@@ -15,7 +16,7 @@ app.use(
 apiRoutes(app)
 
 app.get("*", (req, res) => {
-  res.sendFile("/public/notFound.html")
+  res.sendFile(path.join(__dirname, "/public/notFound.html"))
 })
 
 const PORT = process.env.PORT || 3000
